@@ -4,6 +4,9 @@ learn_module:
 - Author: raj
 - Date: 2020-05-05
 =#
-using BasicModule
 
-println(module_test("Patel", "Raj Nath"))
+include("./module_basics.jl")
+
+# using BasicModule
+
+println(BasicModule.module_test("Patel", "Raj Nath"))

@@ -12,10 +12,10 @@ julia>
 ```
 """
 module BasicModule
-
-function module_test(sirname, name)
-    name = name * ' ' * sirname
-    return name
-    end
+    export module_test
+    function module_test(sirname, name)
+        name = name * ' ' * sirname
+        return name
+        end
 
 end
